@@ -1,0 +1,21 @@
+.main-nav {
+  min-height: 56px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 57px;
+  height: 55px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,60 @@
+.card {
+  padding: 23px 20px 23px;
+  border-top: 1px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.card__photo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 10px;
+}
+
+.card__author {
+  color: #333333;
+  margin: 0;
+}
+
+.card__button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin-right: 5px;
+}
+
+.card__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__like-container {
+  display: flex;
+  padding-top: 15px;
+  align-items: center;
+}
+
+.card__button-icon {
+  opacity: 0.3;
+}
+
+.card__results {
+  font-weight: 700;
+  margin: 0;
+}

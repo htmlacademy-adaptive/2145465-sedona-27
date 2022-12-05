@@ -1,0 +1,25 @@
+.emotions__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: -4px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.emotions__text {
+  background-color: #f2f2f2;
+  border: none;
+  width: 280px;
+  font: inherit;
+  box-sizing: border-box;
+  padding: 15px 17px 9px;
+}
+
+.emotions__text::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}

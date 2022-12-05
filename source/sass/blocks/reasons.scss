@@ -1,0 +1,144 @@
+.reasons__container {
+  display: flex;
+  flex-direction: column;
+
+  &--bridge {
+    background-color: #81b3d2;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  &--city {
+    position: relative;
+    background-color: #81b3d2;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  &::before {
+    position: absolute;
+    background-image: url("/img/triangle-index.svg");
+    content: "";
+    width: 767px;
+    height: 37px;
+    bottom: 0;
+    left: 0;
+    top: -5px;
+  }
+}
+
+.reasons__item {
+  display: flex;
+  flex-direction: column;
+  padding: 21px 20px 37px 15px;
+  box-sizing: border-box;
+
+  &--town {
+    padding-top: 47px;
+    padding-bottom: 40px;
+  }
+
+  &--places {
+    background-color: #eeeeee;
+    padding: 7px 30px 27px 32px;
+  }
+
+  &--order::before {
+    display: block;
+    counter-increment: advantage;
+    content: "— №" " —";
+    order: 2;
+    margin-bottom: 17px;
+  }
+
+  &--live,
+  &--food,
+  &--gift {
+    position: relative;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+  }
+
+  &--live::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -31px;
+    top: 25px;
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -31px;
+    top: 25px;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -31px;
+    top: 25px;
+  }
+}
+
+.reasons .reasons__item--places:not(:last-child)::after {
+  content: "";
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  padding: 0 70px;
+  width: 50%;
+  position: relative;
+  border-top: 1px solid #d6d6d6;
+}
+
+.reasons__container-food-etc {
+  padding: 0 8px 52px 50px;
+  list-style: none;
+  text-align: left;
+}
+
+.reasons__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  order: 1;
+  margin-bottom: 10px;
+}
+
+.reasons__description {
+  text-transform: uppercase;
+  order: 2;
+  margin: 0;
+
+  &--additional {
+    margin-top: 7px;
+    margin-bottom: -7px;
+  }
+}
+
+.reasons__picture {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.reasons__wrap-city,
+.reasons__wrap-bridge {
+  width: 100%;
+}

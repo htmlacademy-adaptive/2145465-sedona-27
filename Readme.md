@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Илья Сидоренко](https://up.htmlacademy.ru/adaptive/27/user/2145465).
-* Наставник: [Александр Оксанич](https://up.htmlacademy.ru/adaptive/27/user/240096).
+* Наставник: [Егор Глебов](https://up.htmlacademy.ru/adaptive/27/user/212499).
 
 ---
 

@@ -1,0 +1,79 @@
+.main-form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-top: 23px;
+  margin: 0 auto;
+}
+
+.main-form__label {
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 15px;
+  margin-top: -3px;
+}
+
+.main-form__input {
+  width: 280px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 10px;
+  background-color: #f2f2f2;
+  border: 4px solid #f2f2f2;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-family: inherit;
+
+  &:hover {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: none;
+  }
+}
+
+.main-form__input::placeholder {
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  opacity: 1;
+}
+
+.main-form__button {
+  margin-top: 36px;
+  width: 280px;
+}
+
+.main-form__button-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 65px;
+  position: relative;
+
+  &::after {
+    content: "* — обязательные поля";
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.6);
+    right: 21px;
+    top: 95px;
+    font-size: 12px;
+    position: absolute;
+  }
+}
+
+.main-form__section {
+  border: none;
+  border-bottom: solid 1px #e5e5e5;
+  padding: 24px 20px 18px;
+
+  &--emotions {
+    border-bottom: none;
+  }
+}

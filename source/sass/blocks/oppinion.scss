@@ -1,0 +1,65 @@
+.oppinion__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.oppinion__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 44px;
+}
+
+.oppinion__label {
+  width: 100%;
+  margin-bottom: 36px;
+  position: relative;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.oppinion__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 15px 17px;
+}
+
+.oppinion__radio {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  left: -16px;
+  top: -10px;
+  margin-right: 16px;
+}
+
+.oppinion__input:checked + .oppinion__radio::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+  transition: width 0.3s, height 0.3s;
+}
+
+.oppinion__label:active .oppinion__radio::before {
+  opacity: 20%;
+}
+
+.oppinion__label:hover .oppinion__radio {
+  background-color: #e5e5e5;
+}
+
+.oppinion__label:active .oppinion__radio {
+  background-color: #d5d5d5;
+}

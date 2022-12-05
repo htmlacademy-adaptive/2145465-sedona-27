@@ -1,0 +1,43 @@
+.video {
+  padding: 17px 20px 0 20px;
+}
+
+.video__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.video__discription {
+  text-transform: uppercase;
+  color: #333333;
+  margin: 30px 5px 38px;
+}
+
+.video__wrap {
+  position: relative;
+}
+
+.video__photo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.video__button {
+  position: absolute;
+  cursor: pointer;
+  width: 48px;
+  height: 54px;
+  border: none;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+}
+
+.video__play-button {
+  width: 48px;
+  height: 54px;
+}

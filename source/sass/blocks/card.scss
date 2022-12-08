@@ -1,15 +1,34 @@
 .card {
-  padding: 23px 20px 23px;
-  border-top: 1px solid #e5e5e5;
+  position: relative;
 
-  &:last-child {
-    border-bottom: 1px solid #e5e5e5;
+  @include mobile {
+    padding: 23px 20px 23px;
+    border-top: 1px solid #e5e5e5;
+
+    &:last-child {
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+
+  &:first-child {
+    @include tablet {
+      grid-column: 1 / -1;
+    }
   }
 }
 
 .card__photo {
   width: 100%;
   object-fit: cover;
+
+  @include tablet {
+    display: block;
+    height: 267px;
+
+    &--main {
+      height: 400px;
+    }
+  }
 }
 
 .card__link {
@@ -24,11 +43,19 @@
   font-size: 14px;
   line-height: 21px;
   padding-top: 10px;
+
+  @include tablet {
+    padding-top: 0;
+  }
 }
 
 .card__author {
   color: #333333;
   margin: 0;
+
+  @include desktop {
+    color: #ffffff;
+  }
 }
 
 .card__button {
@@ -48,13 +75,41 @@
   display: flex;
   padding-top: 15px;
   align-items: center;
+
+  @include tablet {
+    padding-top: 0;
+  }
 }
 
 .card__button-icon {
   opacity: 0.3;
+
+  @include desktop {
+    color: #ffffff;
+    opacity: 1;
+  }
 }
 
 .card__results {
   font-weight: 700;
   margin: 0;
+}
+
+.card__info-container {
+  @include tablet {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px 15px 20px;
+  }
+
+  @include desktop {
+    position: absolute;
+    background-color: rgba(#000000, 0.3);
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 19px 20px 18px;
+  }
 }

@@ -15,11 +15,11 @@
       <a href="index.html" class="main-header__logo">
         <img src="img/logo-sedona.svg" alt="Логотип Седона" class="main-header__logo-image" width="185" height="96">
       </a>
-      <div class="main-header__nav main-nav">
+      <div class="main-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="main-nav__list site-list site-list--closed">
+        <nav class="main-nav__list site-list">
           <a href="index.html" class="site-list__link">
             Главная
           </a>
@@ -41,116 +41,128 @@
       <section class="gallery-list">
         <h1 class="gallery-list__title">Фото и видео</h1>
         <p class="gallery-list__discription">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <section class="gallery-list__item card">
-          <a class="card__link" href="#">
-            <picture>
-              <img class="card__photo card__photo--main" src="img/content/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
-            </picture>
-          </a>
-          <div class="card__info-container">
-            <div class="card__title-container">
-              <h3 class="card__title">
+        <div class="cards-wrapper">
+          <section class="gallery-list__item card">
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
+                <img class="card__photo card__photo--main" src="img/content/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+              </picture>
+            </a>
+            <div class="card__info-container">
+              <div class="card__title-container">
+                <h3 class="card__title">
+                    <a class="card__link" href="#">
+                      Неродные просторы
+                    </a>
+                  </h3>
+                <p class="card__author">Автор фото: Борис</p>
+              </div>
+              <div class="card__like-container">
+                <button class="card__button" type="button">
+                  <svg class="card__button-icon" width="23" height="21" fill="none">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentcolor" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка лайка.</span>
+                </button>
+                <p class="card__results">1350</p>
+              </div>
+            </div>
+          </section>
+          <section class="gallery__item card">
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
+                <img class="card__photo" src="img/content/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+              </picture>
+            </a>
+            <div class="card__info-container">
+              <div class="card__title-container">
+                <h3 class="card__title">
                   <a class="card__link" href="#">
-                    Неродные просторы
+                    Местная растительность
                   </a>
                 </h3>
-              <p class="card__author">Автор фото: Борис</p>
+                <p class="card__author">Автор фото: Сергей</p>
+              </div>
+              <div class="card__like-container">
+                <button class="card__button" type="button">
+                  <svg class="card__button-icon" width="23" height="21" fill="none">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentcolor" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка лайка.</span>
+                </button>
+                <p class="card__results">143</p>
+              </div>
             </div>
-            <div class="card__like-container">
-              <button class="card__button" type="button">
-                <svg class="card__button-icon" width="23" height="21" fill="none">
-                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentcolor" />
-                </svg>
-                <span class="visually-hidden">Кнопка лайка.</span>
-              </button>
-              <p class="card__results">1350</p>
+          </section>
+          <section class="gallery__item card">
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
+                <img class="card__photo" src="img/content/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+              </picture>
+            </a>
+            <div class="card__info-container">
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  <a class="card__link" href="#">
+                    Дорога на север
+                  </a>
+                </h3>
+                <p class="card__author">Автор фото: Петр</p>
+              </div>
+              <div class="card__like-container">
+                <button class="card__button" type="button">
+                  <svg class="card__button-icon" width="23" height="21" fill="none">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentcolor" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка лайка.</span>
+                </button>
+                <p class="card__results">96</p>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="gallery__item card">
-          <a class="card__link" href="#">
-            <picture>
-              <img class="card__photo" src="img/content/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
-            </picture>
-          </a>
-          <div class="card__info-container">
-            <div class="card__title-container">
-              <h3 class="card__title">
-                <a class="card__link" href="#">
-                  Местная растительность
-                </a>
-              </h3>
-              <p class="card__author">Автор фото: Сергей</p>
+          </section>
+          <section class="gallery__item card">
+            <a class="card__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x">
+                <img class="card__photo" src="img/content/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+              </picture>
+            </a>
+            <div class="card__info-container">
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  <a class="card__link" href="#">
+                    Мост дьявола
+                  </a>
+                </h3>
+                <p class="card__author">Автор фото: Антон</p>
+              </div>
+              <div class="card__like-container">
+                <button class="card__button" type="button">
+                  <svg class="card__button-icon" width="23" height="21" fill="none">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentcolor" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка лайка.</span>
+                </button>
+                <p class="card__results">254</p>
+              </div>
             </div>
-            <div class="card__like-container">
-              <button class="card__button" type="button">
-                <svg class="card__button-icon" width="23" height="21" fill="none">
-                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentcolor" />
-                </svg>
-                <span class="visually-hidden">Кнопка лайка.</span>
-              </button>
-              <p class="card__results">143</p>
-            </div>
-          </div>
-        </section>
-        <section class="gallery__item card">
-          <a class="card__link" href="#">
-            <picture>
-              <img class="card__photo" src="img/content/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
-            </picture>
-          </a>
-          <div class="card__info-container">
-            <div class="card__title-container">
-              <h3 class="card__title">
-                <a class="card__link" href="#">
-                  Дорога на север
-                </a>
-              </h3>
-              <p class="card__author">Автор фото: Петр</p>
-            </div>
-            <div class="card__like-container">
-              <button class="card__button" type="button">
-                <svg class="card__button-icon" width="23" height="21" fill="none">
-                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentcolor" />
-                </svg>
-                <span class="visually-hidden">Кнопка лайка.</span>
-              </button>
-              <p class="card__results">96</p>
-            </div>
-          </div>
-        </section>
-        <section class="gallery__item card">
-          <a class="card__link" href="#">
-            <picture>
-              <img class="card__photo" src="img/content/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
-            </picture>
-          </a>
-          <div class="card__info-container">
-            <div class="card__title-container">
-              <h3 class="card__title">
-                <a class="card__link" href="#">
-                  Мост дьявола
-                </a>
-              </h3>
-              <p class="card__author">Автор фото: Антон</p>
-            </div>
-            <div class="card__like-container">
-              <button class="card__button" type="button">
-                <svg class="card__button-icon" width="23" height="21" fill="none">
-                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentcolor" />
-                </svg>
-                <span class="visually-hidden">Кнопка лайка.</span>
-              </button>
-              <p class="card__results">254</p>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </section>
       <section class="video">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="video__discription">Смотрите видеопрезентацию и скорее за билетами, пока они</br> не подорожали в очередной раз!</p>
         <div class="video__wrap">
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img class="video__photo" src="img/video-mobile.jpg" width="280" height="177" alt="Видео пейзажей.">
           </picture>
           <button class="video__button" type="button">

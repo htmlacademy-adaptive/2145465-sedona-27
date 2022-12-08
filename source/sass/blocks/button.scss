@@ -12,6 +12,14 @@
   padding-bottom: 14px;
   cursor: pointer;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
   &--search {
     width: 284px;
     padding-top: 16px;
@@ -20,5 +28,11 @@
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
+
+    @include tablet {
+      width: 458px;
+      padding-top: 14px;
+      padding-bottom: 17px;
+    }
   }
 }

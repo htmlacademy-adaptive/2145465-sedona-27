@@ -15,11 +15,11 @@
       <a href="index.html" class="main-header__logo">
         <img src="img/logo-sedona.svg" alt="Логотип Седона" class="main-header__logo-image" width="185" height="96">
       </a>
-      <div class="main-header__nav main-nav">
+      <div class="main-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="main-nav__list site-list site-list--closed">
+        <nav class="main-nav__list site-list">
           <a href="index.html" class="site-list__link">
             Главная
           </a>
@@ -55,10 +55,12 @@
           </fieldset>
           <fieldset class="main-form__contacts contacts-details main-form__section">
             <legend class="main-form__title contacts-details__title">Контактная информация:</legend>
-            <label for="contacts-details__input--phone" class="contacts-details__label contacts-details__label--phone">Контактный телефон*:</label>
-            <input class="contacts-details__input input" type="tel" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
-            <label for="contacts-details__input--email" class="contacts-details__label contacts-details__label--email">Электронная почта*:</label>
-            <input class="contacts-details__input input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
+
+              <label for="contacts-details__input--phone" class="contacts-details__label contacts-details__label--phone">Контактный телефон*:</label>
+              <input class="contacts-details__input contacts-details__input--phone input" type="tel" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
+                <label for="contacts-details__input--email" class="contacts-details__label contacts-details__label--email">Электронная почта*:</label>
+                <input class="contacts-details__input contacts-details__input--email input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
+
           </fieldset>
         </div>
         <fieldset class="main-form__oppinion main-form__section oppinion">
@@ -82,8 +84,7 @@
           </div>
         </fieldset>
         <fieldset class="main-form__sights main-form__section sights">
-          <legend class="main-form__title sights__title">Посещенные
-            <br> достопримечательности:</legend>
+          <legend class="main-form__title sights__title">Посещенные достопримечательности:</legend>
           <div class="sights__wrapper">
             <label class="sights__label">
               <input class="sights__input visually-hidden" type="checkbox" name="bridge" checked>
@@ -114,6 +115,7 @@
         </fieldset>
         <div class="main-form__button-wrapper">
           <button class="button main-form__button" type="submit">Отправить отзыв</button>
+          <p class="main-form__rule">* — обязательные поля</p>
         </div>
       </form>
     </main>

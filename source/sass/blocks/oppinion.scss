@@ -1,8 +1,19 @@
+.oppinion {
+  @include tablet {
+    margin-top: 42px;
+  }
+}
+
 .oppinion__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @include tablet {
+    margin: 0 auto;
+    font-size: 21px;
+  }
 }
 
 .oppinion__text {
@@ -10,6 +21,14 @@
   font-size: 18px;
   line-height: 26px;
   margin-left: 44px;
+
+  @include tablet {
+    margin-left: 59px;
+  }
+
+  @include desktop {
+    margin-left: 62px;
+  }
 }
 
 .oppinion__label {
@@ -21,12 +40,37 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include tablet {
+    width: 280px;
+
+    &:not(:nth-child(2)) {
+      margin-right: 16px;
+    }
+  }
+
+  @include desktop {
+    width: 280px;
+    margin-right: 28px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
 }
 
 .oppinion__wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 5px 15px 17px;
+
+  @include tablet {
+    padding: 38px 24px 11px 36px;
+  }
+
+  @include desktop {
+    padding: 54px 0 1px 50px;
+  }
 }
 
 .oppinion__radio {
@@ -38,6 +82,10 @@
   left: -16px;
   top: -10px;
   margin-right: 16px;
+
+  @include tablet {
+    left: 0;
+  }
 }
 
 .oppinion__input:checked + .oppinion__radio::before {

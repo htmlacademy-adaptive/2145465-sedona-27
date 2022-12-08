@@ -18,4 +18,72 @@
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 10px;
+  right: 0;
+  z-index: 11;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    height: 3px;
+    width: 23px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::after,
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+@include mobile {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--opened .site-list {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: #81b3d2;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
 }

@@ -15,11 +15,11 @@
       <a href="index.html" class="main-header__logo">
         <img src="img/logo-sedona.svg" alt="Логотип Седона" class="main-header__logo-image" width="185" height="96">
       </a>
-      <div class="main-header__nav main-nav">
+      <div class="main-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="main-nav__list site-list site-list--closed">
+        <nav class="main-nav__list site-list">
           <a href="index.html" class="site-list__link site-list__link--active">
             Главная
           </a>
@@ -35,7 +35,7 @@
         </nav>
       </div>
     </header>
-    <main class="main-container reasons">
+    <main class="main-container">
       <section class="intro">
         <div class="intro__image-wrapper intro__image-wrapper--first">
         </div>
@@ -53,6 +53,8 @@
               <br> там течёт своя жизнь</p>
           </figcaption>
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
             <img class="reasons__picture" src="img/photo-city-mobile.jpg" alt="Площадь города." width="320" height="260">
           </picture>
         </figure>
@@ -74,14 +76,15 @@
         <figure class="reasons__container reasons__container--bridge ">
           <figcaption class="reasons__item reasons__item--order">
             <h3 class="reasons__title">Там есть<br> мост дьявола</h3>
-            <p class="reasons__description">Да, по нему можно пройти!
-              <br> Если вы осмелитесь, разумеется</p>
+            <p class="reasons__description">Да, по нему можно пройти Если вы осмелитесь, разумеется</p>
           </figcaption>
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
             <img class="reasons__picture" src="img/photo-bridge-mobile.jpg" alt="Фотография моста Дьявола." width="320" height="260">
           </picture>
         </figure>
-
+        <div class="reasons__container">
           <div class="reasons__item reasons__item--places reasons__item--order">
             <h3 class="reasons__title">Небольшая площадь</h3>
             <p class="reasons__description">Все интересные места находятся очень близко</p>
@@ -94,6 +97,7 @@
             <h3 class="reasons__title">Мало туристов</h3>
             <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
+        </div>
       </section>
       <section class="hotel-search">
         <h2 class="hotel-search__title">Заинтересовались?</h2>
@@ -102,7 +106,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта окрестностей Седоны.</h2>
-        <img src="https://placehold.co/320x350" alt="Местонахождение Седоны на карте" class="map__item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380555.9499970315!2d-111.9532317173502!3d34.913374820791525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660390178897!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта города Седона в штате Аризона."></iframe>
       </section>
     </main>
     <footer class="main-footer">

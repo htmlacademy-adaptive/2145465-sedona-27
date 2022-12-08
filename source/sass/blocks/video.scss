@@ -1,5 +1,9 @@
 .video {
   padding: 17px 20px 0 20px;
+
+  @include desktop {
+    padding-top: 62px;
+  }
 }
 
 .video__title {
@@ -8,12 +12,35 @@
   line-height: 21px;
   margin: 0;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .video__discription {
   text-transform: uppercase;
   color: #333333;
   margin: 30px 5px 38px;
+
+  @include tablet {
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-bottom: 85px;
+    margin-top: 32px;
+  }
+
+  @include desktop {
+    padding-left: 177px;
+    padding-right: 177px;
+  }
+}
+
+.video__discription br {
+  @include mobile {
+    display: none;
+  }
 }
 
 .video__wrap {
@@ -23,6 +50,15 @@
 .video__photo {
   width: 100%;
   object-fit: cover;
+
+  @include tablet {
+    width: 648px;
+    height: 500px;
+  }
+
+  @include desktop {
+    width: 800px;
+  }
 }
 
 .video__button {

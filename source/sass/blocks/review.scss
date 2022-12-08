@@ -1,6 +1,15 @@
 .review {
   border-bottom: 1px solid #e5e5e5;
   padding-top: 20px;
+
+  @include tablet {
+    padding: 44px 166px 97px 158px;
+    border: none;
+  }
+
+  @include desktop {
+    padding: 89px 166px 66px 164px;
+  }
 }
 
 .review__title {
@@ -8,10 +17,25 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 15px;
+
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 19px;
+  }
+
+  @include desktop {
+    margin-bottom: 28px;
+  }
 }
 
 .review__discription {
   text-transform: uppercase;
   width: 100%;
   margin: 25px auto 27px;
+
+  @include tablet {
+    width: 100%;
+    line-height: 24px;
+    margin: 0;
+  }
 }

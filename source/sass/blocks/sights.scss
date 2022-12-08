@@ -1,9 +1,30 @@
+
+.sights__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 21px;
+    margin: 47px auto 35px;
+  }
+}
+
 .sights__text {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: left;
   margin-left: 44px;
+
+  @include tablet {
+    margin-left: 9px;
+  }
+
+  @include desktop {
+    margin-left: 11px;
+  }
 }
 
 .sights__label {
@@ -15,12 +36,51 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include tablet {
+    width: 224px;
+    text-align: left;
+    padding-left: 52px;
+    box-sizing: border-box;
+  }
+
+  &:not(:nth-child(2n)) {
+    @include tablet {
+      margin-right: 28px;
+    }
+
+    @include desktop {
+      margin-right: 0;
+    }
+  }
+
+  @include desktop {
+    width: auto;
+  }
+
+  &:not(:nth-child(4n)) {
+    @include desktop {
+      margin-right: 64px;
+    }
+  }
 }
 
 .sights__wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 6px 17px 17px;
+
+  @include tablet {
+    margin-left: 84px;
+    margin-right: 84px;
+    padding: 6px 0 11px 0;
+  }
+
+  @include desktop {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 35px 0 49px 41px;
+  }
 }
 
 .sights__checkbox {
@@ -31,6 +91,10 @@
   border-radius: 4px;
   left: -19px;
   top: -10px;
+
+  @include tablet {
+    left: 0;
+  }
 }
 
 .sights__input:checked + .sights__checkbox::before {

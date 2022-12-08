@@ -8,13 +8,39 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 30px;
+    margin-top: 58px;
+    margin-bottom: 32px;
+  }
 }
 
 .hotel-search__description {
   text-transform: uppercase;
   margin-bottom: 32px;
+
+  @include tablet {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 44px;
+  }
+
+  @include desktop {
+    margin-left: 363px;
+    margin-right: 363px;
+    margin-bottom: 49px;
+  }
 }
 
 .hotel-search__button {
   margin-bottom: 49px;
+
+  @include tablet {
+    margin-bottom: 58px;
+  }
+
+  @include desktop {
+    margin-bottom: 67px;
+  }
 }

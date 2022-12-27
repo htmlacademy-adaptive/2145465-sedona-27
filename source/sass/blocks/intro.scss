@@ -36,7 +36,6 @@
   background-position: center;
   height: 389px;
 
-
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
   }
@@ -45,6 +44,10 @@
     background-image: url("../img/back-desktop.jpg");
     padding-top: 77px;
     padding-bottom: 91px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 
   &--first {

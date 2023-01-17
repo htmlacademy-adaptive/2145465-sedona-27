@@ -6,7 +6,8 @@
 
 .br-desktop {
   @include desktop {
-    display: block!important;
+    /* stylelint-disable-next-line declaration-no-important */
+    display: block !important;
   }
 
   @include tablet {
@@ -17,6 +18,7 @@
     display: none;
   }
 }
+
 .br-tablet {
   @include tablet {
     display: block;
@@ -33,7 +35,8 @@
 
 .br-mobile {
   @include mobile {
-    display: block!important;
+    /* stylelint-disable-next-line declaration-no-important */
+    display: block !important;
   }
 
   @include desktop {

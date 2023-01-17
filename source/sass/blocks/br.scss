@@ -1,0 +1,49 @@
+@include mobile {
+  .hotel-search__description br {
+    display: none;
+  }
+}
+
+.br-desktop {
+  @include desktop {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: block !important;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.br-tablet {
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.br-mobile {
+  @include mobile {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: block !important;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}

@@ -1,14 +1,14 @@
 .review {
   border-bottom: 1px solid #e5e5e5;
-  padding-top: 20px;
+  padding-top: 23px;
 
   @include tablet {
-    padding: 44px 166px 97px 158px;
+    padding: 40px 164px 105px;
     border: none;
   }
 
   @include desktop {
-    padding: 89px 166px 66px 164px;
+    padding: 89px 378px 68px;
   }
 }
 
@@ -24,18 +24,22 @@
   }
 
   @include desktop {
-    margin-bottom: 28px;
+    margin-bottom: 31px;
   }
 }
 
 .review__discription {
   text-transform: uppercase;
   width: 100%;
-  margin: 25px auto 27px;
+  margin: 23px auto 29px;
 
   @include tablet {
     width: 100%;
     line-height: 24px;
     margin: 0;
+  }
+
+  @include desktop {
+    line-height: 23px;
   }
 }

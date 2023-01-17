@@ -4,22 +4,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
+    padding-bottom: 44px;
 
     &::after {
       content: "";
       position: absolute;
       background-color: #dbdbdb;
-      height: 95%;
+      height: 336px;
       width: 1px;
       transform: translateX(50%);
-      left: 50%;
+      left: 322px;
     }
+  }
+
+  @include desktop {
+    padding-bottom: 49px;
   }
 }
 
 @include desktop {
   .main-form__intro-wrap::after {
-    left: 51%;
+    left: 492px;
   }
 }
 
@@ -39,10 +44,8 @@
 .main-form__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
   text-transform: uppercase;
-  padding-top: 23px;
-  margin: 0 auto;
+  padding-top: 24px;
 
   @include tablet {
     padding-top: 0;
@@ -54,7 +57,7 @@
   }
 
   @include desktop {
-    margin-left: 41px;
+    margin-left: 33px;
   }
 }
 
@@ -64,13 +67,18 @@
   text-transform: uppercase;
   padding-left: 15px;
   margin-top: -3px;
+
+  @include desktop {
+    padding-left: 17px;
+    margin-top: 0;
+  }
 }
 
 .main-form__input {
   width: 280px;
   background-color: #f2f2f2;
   border: 4px solid #f2f2f2;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
 
   &:hover {
@@ -85,6 +93,7 @@
 
   @include desktop {
     width: 430px;
+    margin-bottom: 15px;
   }
 }
 
@@ -97,13 +106,13 @@
 }
 
 .main-form__button {
-  margin-top: 36px;
+  margin-top: 29px;
   width: 280px;
 
   @include tablet {
     margin-top: 0;
     width: 324px;
-    padding-right: 13px;
+    padding-right: 7px;
   }
 
   @include desktop {
@@ -114,7 +123,7 @@
 .main-form__button-wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 65px;
+  padding-bottom: 11px;
   position: relative;
 
   @include tablet {
@@ -122,14 +131,12 @@
     justify-content: space-between;
     width: 648px;
     align-items: center;
-    padding: 0;
-    padding-top: 47px;
-    padding-bottom: 63px;
+    padding: 42px 0 76px;
   }
 
   @include desktop {
     width: 768px;
-    margin: 47px 97px 67px;
+    padding: 33px 97px 73px;
   }
 }
 
@@ -137,7 +144,7 @@
   max-width: 320px;
   border: none;
   border-bottom: solid 1px #e5e5e5;
-  padding: 24px 20px 18px;
+  padding: 26px 20px 18px;
   margin: 0;
 
   &--emotions {
@@ -165,8 +172,7 @@
 
   @include tablet {
     font-size: 14px;
-    margin-top: 0;
-    padding-top: 19px;
+    margin-top: 23px;
   }
 }
 
@@ -175,4 +181,8 @@
   @include tablet {
     border: none;
   }
+}
+
+.main-form__oppinion {
+  padding-bottom: 17px;
 }

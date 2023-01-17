@@ -1,13 +1,13 @@
 .gallery-list {
-  padding-top: 30px;
+  padding-top: 38px;
 
   @include tablet {
-    padding: 66px 60px 60px;
+    padding: 66px 60px 42px;
   }
 
   @include desktop {
     padding: 0;
-    padding-top: 102px;
+    padding-top: 98px;
   }
 }
 
@@ -40,15 +40,15 @@
 .gallery-list__discription {
   text-transform: uppercase;
   color: #000000;
-  margin: 0 20px 46px;
+  margin: 0 20px 37px;
 
   @include tablet {
-    margin-bottom: 67px;
+    margin-bottom: 80px;
     padding: 0 90px;
   }
 
   @include desktop {
-    margin-bottom: 84px;
+    margin-bottom: 89px;
     padding-left: 360px;
     padding-right: 360px;
   }

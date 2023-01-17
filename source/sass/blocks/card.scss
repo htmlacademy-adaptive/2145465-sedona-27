@@ -2,7 +2,7 @@
   position: relative;
 
   @include mobile {
-    padding: 23px 20px 23px;
+    padding: 24px 20px 23px;
     border-top: 1px solid #e5e5e5;
 
     &:last-child {
@@ -19,7 +19,7 @@
 
 .card__photo {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 
   @include tablet {
     display: block;
@@ -62,7 +62,8 @@
   display: block;
   border: none;
   background-color: transparent;
-  margin-right: 5px;
+  margin-right: 14px;
+  padding: 0;
 }
 
 .card__title-container {

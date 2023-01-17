@@ -9,6 +9,7 @@
   @include tablet {
     display: flex;
     flex-direction: row;
+    height: 100%;
   }
 
   &--bridge {
@@ -49,9 +50,8 @@
 .reasons__item {
   display: flex;
   flex-direction: column;
-  padding: 21px 20px 37px 15px;
+  padding: 21px 20px 37px 20px;
   box-sizing: border-box;
-
 
   &--town {
     padding-top: 47px;
@@ -66,7 +66,7 @@
     min-height: 256px;
     width: 256px;
     box-sizing: border-box;
-    padding: 17px 32px 32px;
+    padding: 32px;
   }
 
   @include desktop {
@@ -76,14 +76,25 @@
 
   &--places {
     background-color: #eeeeee;
-    padding: 7px 30px 27px 32px;
+    padding: 6px 31px 25px 29px;
+    min-height: 167px;
 
     @include tablet {
-      padding: 19px 47px 27px 49px;
+      padding: 31px 27px 53px;
     }
 
     @include desktop {
-      padding: 19px 52px 27px 49px;
+      padding: 37px 57px 20px;
+    }
+  }
+
+  &--places:nth-child(2) {
+    @include tablet {
+      padding: 20px 48px 33px 47px;
+    }
+
+    @include desktop {
+      padding: 26px 48px 33px 47px;
     }
   }
 
@@ -99,13 +110,17 @@
   &--food,
   &--gift {
     position: relative;
-    padding-top: 7px;
-    padding-bottom: 5px;
-    padding-right: 10px;
+    padding: 7px 10px 8px 15px;
 
     @include tablet {
-      padding-top: 128px;
-      padding-right: 32px;
+      padding: 128px 15px 5px 15px;
+    }
+
+    @include desktop {
+      padding-top: 142px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 13px;
     }
   }
 
@@ -128,6 +143,7 @@
     }
 
     @include desktop {
+      top: 21%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -144,16 +160,57 @@
     top: 25px;
 
     @include tablet {
-      width: 76px;
-      height: 68px;
+      width: 79px;
+      height: 69px;
       background-size: cover;
-      left: 35%;
+      left: 34%;
       top: 18%;
     }
 
     @include desktop {
+      top: 22%;
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+
+  &--gift {
+    @include tablet {
+      padding-top: 125px;
+      padding-left: 39px;
+      padding-right: 42px;
+    }
+
+    @include desktop {
+      padding-top: 144px;
+      padding-left: 39px;
+      padding-right: 42px;
+    }
+  }
+
+  &--food {
+    @include tablet {
+      padding-top: 128px;
+      padding-left: 52px;
+      padding-right: 52px;
+    }
+
+    @include desktop {
+      padding-top: 140px;
+    }
+  }
+
+  &--live {
+    @include tablet {
+      padding-top: 130px;
+      padding-left: 42px;
+      padding-right: 43px;
+    }
+
+    @include desktop {
+      padding-top: 142px;
+      padding-left: 51px;
+      padding-right: 51px;
     }
   }
 
@@ -164,19 +221,20 @@
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    left: -31px;
+    left: -28px;
     top: 25px;
 
     @include tablet {
-      width: 64px;
-      height: 75px;
+      width: 66px;
+      height: 79px;
       background-size: cover;
-      left: 36%;
-      top: 17%;
+      left: 38%;
+      top: 18%;
     }
 
     @include desktop {
-      left: 50%;
+      top: 20%;
+      left: 49%;
       transform: translateX(-50%);
     }
   }
@@ -185,19 +243,20 @@
 @include mobile {
   .reasons .reasons__item--places:not(:last-child)::after {
     content: "";
-    top: 160px;
+    top: 24px;
     left: 50%;
     transform: translateX(-50%);
     display: block;
     padding: 0 70px;
-    width: 70%;
+    width: 145px;
     position: relative;
-    border-top: 1px solid #d6d6d6;
+    order: 4;
+    border-bottom: 1px solid #d6d6d6;
   }
 }
 
 .reasons__container-food-etc {
-  padding: 0 8px 52px 50px;
+  padding: 0 8px 44px 50px;
   list-style: none;
   text-align: left;
 
@@ -206,7 +265,7 @@
     flex-wrap: wrap;
     text-align: center;
     padding: 0;
-    height: 330px;
+    height: 100%;
   }
 }
 
@@ -221,9 +280,12 @@
   @include tablet {
     font-size: 21px;
     margin-bottom: 13px;
+    margin-left: 7px;
+    margin-right: 7px;
   }
 
   @include desktop {
+    margin-top: 26px;
     margin-left: 70px;
     margin-right: 70px;
   }
@@ -235,16 +297,25 @@
   margin: 0;
 
   @include tablet {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
     margin-top: 7px;
+    margin-bottom: 19px;
   }
 
   &--additional {
     margin-top: 7px;
     margin-bottom: -7px;
+  }
+}
 
-    @include tablet {
-      margin-top: 10px;
-    }
+@include tablet {
+  .reasons__description--additional {
+    margin-top: 10px;
+    margin-bottom: 56px;
   }
 }
 
@@ -255,7 +326,7 @@
 
   @include tablet {
     width: 512px;
-    height: 256px;
+    height: 100%;
   }
 
   @include desktop {
@@ -268,17 +339,6 @@
   .reasons__item--bridge {
     display: flex;
     width: 768px;
-  }
-}
-
-@include desktop {
-  .advantages__item {
-    width: 400px;
-  }
-
-  .advantages__item--city,
-  .advantages__item--bridge {
-    width: 1200px;
   }
 }
 

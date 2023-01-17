@@ -1,8 +1,12 @@
 .video {
-  padding: 17px 20px 0 20px;
+  padding: 19px 20px 0 20px;
 
   @include desktop {
-    padding-top: 62px;
+    padding-top: 60px!important;
+  }
+
+  @include tablet {
+    padding-top: 17px;
   }
 }
 
@@ -27,13 +31,14 @@
   @include tablet {
     padding-right: 70px;
     padding-left: 70px;
-    margin-bottom: 85px;
+    margin-bottom: 90px;
     margin-top: 32px;
   }
 
   @include desktop {
     padding-left: 177px;
     padding-right: 177px;
+    margin-bottom: 87px;
   }
 }
 
@@ -45,15 +50,27 @@
 
 .video__wrap {
   position: relative;
+  overflow: hidden;
+
+
+  @include tablet {
+    padding-bottom: 44px;
+  }
+
+  @include desktop {
+    padding-bottom: 88px;
+  }
 }
 
 .video__photo {
   width: 100%;
   object-fit: cover;
+  display: block;
 
   @include tablet {
     width: 648px;
     height: 500px;
+    display: inline-block;
   }
 
   @include desktop {
@@ -64,13 +81,23 @@
 .video__button {
   position: absolute;
   cursor: pointer;
-  width: 48px;
+  width: 40px;
   height: 54px;
   border: none;
-  top: 50%;
-  left: 50%;
+  top: 48%;
+  left: 46%;
   background-color: transparent;
   transform: translate(-50%, -50%);
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include desktop {
+    width: 28px;
+    top: 42%;
+    left: 49%;
+  }
 }
 
 .video__play-button {

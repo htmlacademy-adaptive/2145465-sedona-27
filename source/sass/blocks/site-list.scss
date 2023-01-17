@@ -32,7 +32,7 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 24px;
     color: #000000;
     text-align: center;
     width: 153px;
@@ -55,11 +55,21 @@
   .site-list__link:nth-child(2) {
     margin-right: 153px;
   }
+
+  .site-list__link:not(:last-child) {
+    margin-left: 1px;
+  }
 }
+
+
 
 @include desktop {
   .site-list__link:nth-child(2) {
     margin-right: 240px;
+  }
+
+  .site-list__link:not(:last-child) {
+    margin-left: 0;
   }
 }
 

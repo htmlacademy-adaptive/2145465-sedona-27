@@ -1,0 +1,46 @@
+@include mobile {
+  .hotel-search__description br {
+    display: none;
+  }
+}
+
+.br-desktop {
+  @include desktop {
+    display: block!important;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+.br-tablet {
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.br-mobile {
+  @include mobile {
+    display: block!important;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}

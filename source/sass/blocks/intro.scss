@@ -1,8 +1,10 @@
 .intro__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 27px;
   text-transform: uppercase;
+  margin: 0 6px 0 3px;
+
 
   @include tablet {
     font-size: 21px;
@@ -10,21 +12,30 @@
 }
 
 .intro__text-wrapper {
-  padding: 32px 25px 16px;
+  padding: 32px 25px 7px;
   position: relative;
 
   @include tablet {
-    padding: 47px 124px 56px;
+    padding: 47px 124px 41px;
   }
 
   @include desktop {
-    padding-left: 350px;
-    padding-right: 350px;
+    padding: 59px 350px 30px;
   }
 }
 
 .intro__text {
   text-transform: uppercase;
+  margin-top: 35px;
+
+  @include desktop {
+    margin-top: 28px;
+  }
+
+  @include tablet {
+    margin-top: 28px;
+    margin-bottom: 15px;
+  }
 }
 
 .intro__image-wrapper {
@@ -44,6 +55,7 @@
     background-image: url("../img/back-desktop.jpg");
     padding-top: 77px;
     padding-bottom: 91px;
+    height: 350px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
@@ -61,7 +73,7 @@
       height: 214px;
       left: 50%;
       transform: translate(-50%, -50%);
-      top: 50%;
+      top: 197px;
     }
   }
 
@@ -69,6 +81,7 @@
     height: 158px;
     width: 100%;
     background-image: url("../img/back-mobile-second.jpg");
+    background-position: 0 -56px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-mobile-second@2x.jpg");
@@ -86,6 +99,7 @@
 
     @include desktop {
       background-image: url("../img/back-desktop-second.jpg");
+      height: 300px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/back-desktop-second@2x.jpg");
@@ -101,7 +115,7 @@
       width: 229px;
       height: 39px;
       left: 50%;
-      top: 50%;
+      top: 45%;
       transform: translate(-50%, -50%);
     }
   }
@@ -123,6 +137,13 @@
   .intro__image-wrapper--first::after {
     width: 461px;
     height: 350px;
+    top: 251px;
+  }
+}
+
+@include desktop {
+  .intro__image-wrapper--first::after {
+    top: 254px;
   }
 }
 
@@ -130,5 +151,13 @@
   .intro__image-wrapper--second::after {
     width: 459px;
     height: 80px;
+    top: 135px;
+  }
+}
+
+@include desktop {
+  .intro__image-wrapper--second::after {
+    top: 47%;
+    left: 598px;
   }
 }

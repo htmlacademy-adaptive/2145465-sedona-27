@@ -1,6 +1,7 @@
 .oppinion {
   @include tablet {
-    margin-top: 42px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -13,6 +14,7 @@
   @include tablet {
     margin: 0 auto;
     font-size: 21px;
+    padding-top: 0;
   }
 }
 
@@ -20,14 +22,14 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-left: 44px;
+  margin-left: 47px;
 
   @include tablet {
-    margin-left: 59px;
+    margin-left: 62px;
   }
 
   @include desktop {
-    margin-left: 62px;
+    margin-left: 65px;
   }
 }
 
@@ -53,6 +55,10 @@
     width: 280px;
     margin-right: 28px;
 
+    &:not(:nth-child(2)) {
+      margin-right: 29px;
+    }
+
     &:nth-child(3) {
       margin-right: 0;
     }
@@ -65,11 +71,15 @@
   padding: 5px 15px 17px;
 
   @include tablet {
-    padding: 38px 24px 11px 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 38px 24px 59px 36px;
   }
 
   @include desktop {
-    padding: 54px 0 1px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 54px 0 39px 50px;
   }
 }
 

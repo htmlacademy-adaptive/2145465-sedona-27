@@ -53,20 +53,19 @@
           <fieldset class="main-form__section main-form__name">
             <legend class="main-form__title">Представьтесь:</legend>
             <label for="name" class="main-form__label">Имя*:</label>
-            <input class="main-form__input input" type="text" id="name" name="name" placeholder="Илья" required>
+            <input class="main-form__input input" type="text" id="name" name="name" placeholder="Пётр" required>
             <label for="surname" class="main-form__label">Фамилия*:</label>
-            <input class="main-form__input input" type="text" id="surname" name="surname" placeholder="Ильин" required>
+            <input class="main-form__input input" type="text" id="surname" name="surname" placeholder="Пустота" required>
             <label for="patronymic" class="main-form__label">Отчество:</label>
-            <input class="main-form__input input" type="text" id="patronymic" name="patronymic" placeholder="Михайлович">
+            <input class="main-form__input input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
           </fieldset>
           <fieldset class="main-form__contacts contacts-details main-form__section">
             <legend class="main-form__title contacts-details__title">Контактная информация:</legend>
 
               <label for="contacts-details__input--phone" class="contacts-details__label contacts-details__label--phone">Контактный телефон*:</label>
               <input class="contacts-details__input contacts-details__input--phone input" type="tel" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
-                <label for="contacts-details__input--email" class="contacts-details__label contacts-details__label--email">Электронная почта*:</label>
-                <input class="contacts-details__input contacts-details__input--email input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
-
+              <label for="contacts-details__input--email" class="contacts-details__label contacts-details__label--email">Электронная почта*:</label>
+              <input class="contacts-details__input contacts-details__input--email input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
           </fieldset>
         </div>
         <fieldset class="main-form__oppinion main-form__section oppinion">
@@ -77,11 +76,13 @@
               <span class="oppinion__radio" tabindex="1"></span>
               <span class="oppinion__text">Скорее положительное</span>
             </label>
+
             <label class="oppinion__label">
               <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="bad">
               <span class="oppinion__radio" tabindex="2"></span>
               <span class="oppinion__text">Скорее отрицательное</span>
             </label>
+
             <label class="oppinion__label">
               <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="nothing">
               <span class="oppinion__radio" tabindex="3"></span>
@@ -125,7 +126,7 @@
         </div>
       </form>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--second">
       <p class="visit-text">#visitSEDONA</p>
       <div class="main-footer__social social">
         <span class="visually-hidden">ВКонтакте.</span>

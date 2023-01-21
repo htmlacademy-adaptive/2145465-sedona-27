@@ -110,6 +110,10 @@
   transition: width 0.3s, height 0.3s;
 }
 
+.oppinion__input:focus + .oppinion__radio {
+  border: 2px #000000 solid;
+}
+
 .oppinion__label:active .oppinion__radio::before {
   opacity: 20%;
 }

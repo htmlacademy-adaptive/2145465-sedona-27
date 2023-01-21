@@ -143,8 +143,8 @@
     }
 
     @include desktop {
-      top: 21%;
-      left: 50%;
+      top: 67px;
+      left: 199px;
       transform: translateX(-50%);
     }
   }
@@ -168,8 +168,8 @@
     }
 
     @include desktop {
-      top: 22%;
-      left: 50%;
+      top: 71px;
+      left: 196px;
       transform: translateX(-50%);
     }
   }
@@ -233,8 +233,8 @@
     }
 
     @include desktop {
-      top: 20%;
-      left: 49%;
+      top: 65px;
+      left: 198px;
       transform: translateX(-50%);
     }
   }
@@ -309,7 +309,12 @@
   &--additional {
     margin-top: 7px;
     margin-bottom: -7px;
+    color: #333333;
   }
+}
+
+.reasons__item--places .reasons__description {
+  color: #333333;
 }
 
 @include tablet {

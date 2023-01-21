@@ -8,6 +8,14 @@
   align-items: center;
   text-decoration: none;
   margin-left: 10px;
+
+  &:hover {
+    color: #81B3D2;
+  }
+
+  &:active {
+    color: #B3B3B3;
+  }
 }
 
 .copyright__link-icon {

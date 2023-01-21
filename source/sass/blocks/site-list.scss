@@ -9,6 +9,7 @@
 
   @include tablet {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: row;
     background-color: #ffffff;

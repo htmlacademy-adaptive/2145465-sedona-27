@@ -109,6 +109,10 @@
   }
 }
 
+.sights__input:focus + .sights__checkbox {
+  border: 2px #000000 solid;
+}
+
 .sights__input:checked + .sights__checkbox::before {
   position: absolute;
   top: 15px;

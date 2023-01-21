@@ -11,7 +11,7 @@
   }
 }
 
-.gallery__item {
+.gallery-list__item {
   @include tablet {
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
 
 .gallery-list__discription {
   text-transform: uppercase;
-  color: #000000;
+  color: #333333;
   margin: 0 20px 37px;
 
   @include tablet {

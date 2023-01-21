@@ -1,9 +1,11 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   gap: 6px;
   margin-bottom: 38px;
+  justify-content: center;
 
   @include tablet {
     margin-left: 18px;
@@ -13,14 +15,14 @@
 
 .main-footer--second .social {
   @include tablet {
-    margin-left: 111px;
-    margin-right: 108px;
+    margin-left: 102px;
+    margin-right: 92px;
     margin-bottom: 0;
   }
 
   @include desktop {
-    margin-left: 267px;
-    margin-right: 264px;
+    margin-left: 260px;
+    margin-right: 247px;
   }
 }
 

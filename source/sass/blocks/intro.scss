@@ -5,7 +5,6 @@
   text-transform: uppercase;
   margin: 0 6px 0 3px;
 
-
   @include tablet {
     font-size: 21px;
   }
@@ -78,49 +77,6 @@
     }
   }
 
-  &--second {
-    height: 158px;
-    width: 100%;
-    background-image: url("../img/back-mobile-second.jpg");
-    background-position: 0 -56px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-mobile-second@2x.jpg");
-    }
-
-    @include tablet {
-      background-image: url("../img/back-tablet-second.jpg");
-      padding: 0;
-      height: 290px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/back-tablet-second@2x.jpg");
-      }
-    }
-
-    @include desktop {
-      background-image: url("../img/back-desktop-second.jpg");
-      height: 300px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/back-desktop-second@2x.jpg");
-      }
-    }
-
-    &::after {
-      content: "";
-      background-image: url("../img/logo-sedona-text.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      width: 229px;
-      height: 39px;
-      left: 50%;
-      top: 45%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
   &::before {
     position: absolute;
     background-image: url("../img/intro-triangle.svg");
@@ -145,20 +101,5 @@
 @include desktop {
   .intro__image-wrapper--first::after {
     top: 254px;
-  }
-}
-
-@include tablet {
-  .intro__image-wrapper--second::after {
-    width: 459px;
-    height: 80px;
-    top: 135px;
-  }
-}
-
-@include desktop {
-  .intro__image-wrapper--second::after {
-    top: 47%;
-    left: 598px;
   }
 }
